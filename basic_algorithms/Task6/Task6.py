@@ -24,14 +24,14 @@ def get_min_max(ints):
 l = [i for i in range(0, 10)]  # a list containing 0 - 9
 random.shuffle(l)
 
-print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail") #pass
 
 l = [i for i in range(0, 486)]  # a list containing 0 - 485
 random.shuffle(l)
 
-print ("Pass" if ((0, 485) == get_min_max(l)) else "Fail")
+print ("Pass" if ((0, 485) == get_min_max(l)) else "Fail") #pass
 
 l = [i for i in range(-47, 48)]  # a list containing -47 - 47
 random.shuffle(l)
 
-print ("Pass" if ((-47, 47) == get_min_max(l)) else "Fail")
+print ("Pass" if ((-47, 47) == get_min_max(l)) else "Fail") #pass
