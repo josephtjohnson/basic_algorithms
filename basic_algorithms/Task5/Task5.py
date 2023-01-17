@@ -69,4 +69,21 @@ def f(prefix):
     else:
         print('')
 
+print('\nTest 1')
+print(f('a')) #returns ['nt', 'nthology', 'ntagonist', 'ntonym', 'None']
+print("///")
+
+print('\nTest 2')
+print(f('')) #returns "None"
+print("///")
+
+print('\nTest 3')
+print(f('z')) #returns prefix +" not found" + "None"
+print("///")
+
+print('\nTest 4')
+print(f('zsadfkjhdasfkjbasergfonsdfgkjsdanguiadsfnoiauergnadfguinsigusndafiuangiousdrgbajsdfnaiuefnhaeriufna')) 
+#returns prefix + " not found" + "None"
+print("///")
+
 interact(f,prefix='');
