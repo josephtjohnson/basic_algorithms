@@ -3,9 +3,13 @@ The router implements the node class and a trie data structure to allow for mult
 single section of the pathway (e.g. /about/me, /about/you, /about/they).
 
 
-Time complexity: 
-Even though the algorithm uses the dictionary data structure it still performs a breadth first
-search thus giving us an O(n)
+Time complexity: Time complexity will vary between due to the modular style of this algorithm
+insert() --> O(n)
+find() --> O(n)
+add_handler() --> O(1)
+lookup --> O(n) (depends upon the number of words split_path() returns
+split_path() --> O(n)
+Worst case scenario --> O(n)
 
  
 Space complexity:
