@@ -2,8 +2,26 @@ from ipywidgets import widgets
 from IPython.display import display
 from ipywidgets import interact
 
-## Represents a single node in the Trie
 class TrieNode:
+    """
+    A class to represent a TrieNode
+
+    ...
+
+    Attributes
+    ----------
+    children : dict
+        a dictionary to map characters to words
+    isEnd : boolean
+        boolean used to determine if the character in the tree is a terminal one
+        thus indicating a word
+
+    Methods
+    -------
+    suffixes(suffix = ''):
+        takes in a suffix an finds all possible words in the tree that start with
+        that character.
+    """
     def __init__(self):
         ## Initialize this node in the Trie
         self.children = {}
@@ -22,6 +40,26 @@ class TrieNode:
 
 ## The Trie itself containing the root node and insert/find functions
 class Trie:
+    """
+    A class to represent a Trie.
+
+    ...
+
+    Attributes
+    ----------
+    root : TrieNode
+        a TrieNode that will be the root of the Trie
+
+    Methods
+    -------
+    insert(word):
+        takes a word and associates each character in the word
+        with the word.
+        
+    find(prefix):
+        takes in a prefix and returns all possible words associated
+        with it. If not words are associated with it, returns None.
+    """
     def __init__(self):
         ## Initialize this Trie (add a root node)
         self.root = TrieNode()
