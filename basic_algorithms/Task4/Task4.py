@@ -1,14 +1,12 @@
 def dnf_sort(array):
     """
     Receives an array of 0s, 1s, and 2, and returns a sorted array in a single traversal
-  
-  
+ 
     Parameters:
     arg1 (array): An unsorted, or sorted, array consisting of 0s, 1s, and 2s
   
     Returns:
     array: Sorted array
-  
     """
     
     sorted_numbers = [[],[],[]]
