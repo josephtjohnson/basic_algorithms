@@ -3,6 +3,7 @@ from array import ArrayType
 def findPivot(array, lowIndex, highIndex):
     """
     Find the pivot within the array.
+    
     Args:
        input_list(array), lowIndex(int), highIndex(int): Input array to search and between
        low and high indices.
@@ -29,6 +30,7 @@ def findPivot(array, lowIndex, highIndex):
 def quick_sort(array, lowIndex, highIndex):
     """
     Performs a quick sort algorithm on an array recursively.
+    
     Args:
        array(array), lowIndex(int), highIndex(int): Input array to search and between
        low and high indices.
@@ -52,6 +54,7 @@ def rearrangeArray(array):
     Rearranges the array to be only two numbers who's size is not different by more than
     one decimal place. The sum of the two numbers equals the max for combinations of numbers
     under these conditions.
+    
     Args:
        array(array): Input array to rearrange.
     Returns:
